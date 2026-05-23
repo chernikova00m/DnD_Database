@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD Character Database</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+        header { background: #2c3e50; color: #fff; padding: 1rem 0; text-align: center; }
+        nav { background: #34495e; padding: 0.5rem; text-align: center; }
+        nav a { color: #fff; text-decoration: none; margin: 0 10px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        section { background: #fff; margin: 20px auto; padding: 20px; max-width: 800px; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+        h1, h2 { color: #2c3e50; }
+        footer { text-align: center; padding: 10px; background: #2c3e50; color: #fff; margin-top: 20px; }
+        .journal-post { border-left: 3px solid #3498db; padding-left: 10px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DnD Character Database</h1>
+        <p>База данных персонажей для настольной ролевой игры</p>
+    </header>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">О проекте</a>
+        <a href="#participants">Участники</a>
+        <a href="#journal">Журнал</a>
+        <a href="#resources">Ресурсы</a>
+    </nav>
+
+    <section id="home">
+        <h2>Главная</h2>
+        <p>Добро пожаловать на сайт проекта <strong>DnD Character Database</strong>. Здесь представлена база данных для управления персонажами настольной ролевой игры Dungeons & Dragons, разработанная в рамках проектной практики Московского Политеха.</p>
+    </section>
+
+    <section id="about">
+        <h2>О проекте</h2>
+        <p><strong>Цель:</strong> создание удобного инструмента для хранения и управления характеристиками игровых персонажей.</p>
+        <p><strong>Технологии:</strong> C# (.NET 6+), SQLite, Git, Markdown, HTML/CSS.</p>
+        <p>Приложение позволяет добавлять, просматривать, фильтровать по классам и удалять персонажей, автоматически сохраняя данные в локальную базу данных.</p>
+    </section>
+
+    <section id="participants">
+        <h2>Участники</h2>
+        <p><strong>Разработчик:</strong> Черникова Мария Михайловна, группа 251-337</p>
+        <p><strong>Вклад:</strong> проектирование структуры БД, написание кода на C#, настройка Git-репозитория, создание документации и веб-сайта проекта.</p>
+        <p><strong>Руководитель практики:</strong> Баркар Мария Валентиновна</p>
+    </section>
+
+    <section id="journal">
+        <h2>Журнал прогресса</h2>
+        <div class="journal-post">
+            <strong>20.05.2026</strong> — Завершена разработка консольного приложения. Протестированы CRUD-операции.
+        </div>
+        <div class="journal-post">
+            <strong>15.05.2026</strong> — Создана структура базы данных SQLite. Добавлено 32 персонажа.
+        </div>
+        <div class="journal-post">
+            <strong>10.05.2026</strong> — Настроен Git-репозиторий, изучен синтаксис Markdown, начата работа над сайтом.
+        </div>
+    </section>
+
+    <section id="resources">
+        <h2>Ресурсы</h2>
+        <ul>
+            <li><a href="https://github.com/chernikova00m/DnD_Database" target="_blank">Репозиторий проекта на GitHub</a></li>
+            <li><a href="https://learn.microsoft.com/ru-ru/dotnet/standard/data/sqlite/" target="_blank">Документация SQLite для .NET</a></li>
+            <li><a href="https://ru.hexlet.io/courses/intro-to-databases" target="_blank">Курс Hexlet: Введение в базы данных</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Черникова М.М. | Московский Политехнический Университет</p>
+    </footer>
+</body>
+</html>
